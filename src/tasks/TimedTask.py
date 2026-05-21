@@ -1,5 +1,5 @@
-from task import Task
 from datetime import datetime
+from .Task import Task
 
 class TimedTask(Task):
     def __init__(self, title:str, due_date:str):

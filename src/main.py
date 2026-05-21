@@ -1,5 +1,4 @@
-from .tasks.Task import Task
-from .tasks.TimedTask import TimedTask
+from src.tasks.* import Task, TimedTask
 from .list.ToDoList import ToDoList
 from datetime import datetime
 

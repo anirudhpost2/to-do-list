@@ -3,7 +3,7 @@ from .Task import Task
 
 class TimedTask(Task):
     def __init__(self, title:str, due_date:str):
-        super.__init__(title)
+        super().__init__(title)
         self.due_date = datetime.strptime(due_date, "%Y-%m-%d").date()
 
     def mark_completed(self):

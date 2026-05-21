@@ -14,3 +14,13 @@ class ToDoList:
             print(f"Removed task: '{removed.title}'")
        else:
             print("Invalid task index.")
+
+    def display_tasks(self):
+        if not self.tasks:
+            print("\nYour to-do list is empty!")
+            return
+
+        print("\n--- Current To-Do List ---")
+        for index, task in enumerate(self.tasks):
+            print(f"{index}. {task}")
+        print("--------------------------\n")

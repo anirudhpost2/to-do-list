@@ -47,7 +47,7 @@ def main():
                     my_list.add_task(TimedTask(title, due_date))
                     print(f"Added timed task: '{title}' (Due: {due_date})")
                 except ValueError:
-                    print("❌ Error: Invalid date format! Please use YYYY-MM-DD.")
+                    print("Error: Invalid date format! Please use YYYY-MM-DD.")
             else:
                 print("Both title and due date are required.")
 
@@ -63,9 +63,9 @@ def main():
                     # Polymorphism in action! Python decides which version to run.
                     my_list.tasks[index].mark_complete()
                 else:
-                    print("❌ Error: Task number out of range.")
+                    print("Error: Task number out of range.")
             except ValueError:
-                print("❌ Error: Please enter a valid number.")
+                print("Error: Please enter a valid number.")
 
         elif choice == "5":
             my_list.display_tasks()
@@ -76,14 +76,14 @@ def main():
                 index = int(input("Enter the task number to remove: "))
                 my_list.remove_task(index)
             except ValueError:
-                print("❌ Error: Please enter a valid number.")
+                print("Error: Please enter a valid number.")
 
         elif choice == "6":
             print("\nGoodbye! Stay productive! 🚀")
             break
 
         else:
-            print("❌ Invalid choice. Please pick a number from 1 to 6.")
+            print(" Invalid choice. Please pick a number from 1 to 6.")
 
 if __name__ == "__main__":
     main()
